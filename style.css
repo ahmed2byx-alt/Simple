@@ -15,6 +15,7 @@ body {
     background-image: url('logo/back.jpg');
     background-size: cover;
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .back {
@@ -122,8 +123,7 @@ input:focus {
 .box-type-1 {
     background-color: #c14a0e88;
     border-radius: 15px 0 0px 15px;
-    margin-left: 20%;
-    width: 80%;
+    flex: 1 1 400px;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -139,12 +139,15 @@ input:focus {
 
 .box-type-1 div {
     padding: 20px;
-    font-size: 35px;
+    font-size: clamp(20px, 3vw, 35px);
 }
 
 .box-type-1 img {
-    width: 500px;
-    border-radius: 15px 0 5px 15px;
+    height: auto;
+    max-height: 250px;
+    max-width: 45%;
+    object-fit: cover;
+    border-radius: 15px 0 0px 15px;
 }
 
 /* 2 */
@@ -152,8 +155,7 @@ input:focus {
 .box-type-2 {
     background-color: #c14a0e88;
     border-radius: 0 15px 15px 0;
-    margin-right: 20%;
-    width: 80%;
+    flex: 1 1 400px;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -170,12 +172,24 @@ input:focus {
 
 .box-type-2 div {
     padding: 20px;
-    font-size: 35px;
+    font-size: clamp(20px, 3vw, 35px);
 }
 
 .box-type-2 img {
-    width: 500px;
+    height: auto;
+    max-height: 250px;
+    max-width: 45%;
+    object-fit: cover;
     border-radius: 0 15px 15px 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 /* حركة الدخول من اليمين */
@@ -228,4 +242,18 @@ input:focus {
     to {
         opacity: 1;
     }
+}
+
+
+
+.footer {
+    background-color: #c14a0e88;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.social-links img {
+    width: 30px;
+    margin-top: 10px;
 }
