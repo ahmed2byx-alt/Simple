@@ -128,12 +128,13 @@ input:focus {
 
 .welcome {
     display: flex;
+    flex-direction: column;
     animation: appear .5s ease-out;
     background-color: #7087a5;
     justify-content: center;
     align-items: center;
     min-height: 65vh;
-    font-size: 50px;
+    font-size: 80px;
 }
 
 /* 1 */
