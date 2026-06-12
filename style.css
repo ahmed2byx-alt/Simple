@@ -4,7 +4,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 200;
+    font-weight: 300;
+    margin:0px;
 }
 
 body {
@@ -75,23 +76,24 @@ input {
     font-family: 'Bitcount Grid Single', monospace;
     font-size: 20px;
     border: none;
-    margin-right: 60px;
+    margin-right: 10px;
     transition: all .5s ease;
 
 }
 
 input:focus {
     outline: none;
-    box-shadow: 3px 4px 5px #c14a0e88;
+    box-shadow: 3px 4px 5px #ffffff88;
 }
 
 .first {
     display: flex;
     background-color: #7087a5;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 5px 20px;
     animation: appear .5s ease-out;
+    margin-top: 10px;
 }
 
 .first button {
@@ -104,13 +106,12 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
     right: 10px;
-    transition: all .5s ease;
+    transition: all .3s ease;
 }
 
 .first button:hover {
-    box-shadow: 0px 0px 5px 2px #ff550088;
+    box-shadow: 0px 0px 5px 3px #ecb396;
     border-radius: 50%;
 }
 
@@ -134,7 +135,7 @@ input:focus {
     justify-content: center;
     align-items: center;
     min-height: 65vh;
-    font-size: 80px;
+    font-size: 50px;
 }
 
 /* 1 */
@@ -243,7 +244,7 @@ input:focus {
 
 .container {
     display: flex;
-    background-color: aliceblue;
+    background: transparent;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -251,6 +252,7 @@ input:focus {
 
 .o1 {
     padding-bottom: 50px;
+    background: transparent;
 }
 
 /* حركة الدخول من اليمين */
@@ -306,10 +308,15 @@ input:focus {
 }
 
 .space {
-    min-height: 80vh;
+    height: auto;
     display: flex;
     flex-direction:column;
     flex-grow: 1;
+    background-color: #ffffff;
+    background-image: url(logo/containe.jpg);
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: 0 0 10px 10px #ffffff8c;
 }
 
 .footer {
